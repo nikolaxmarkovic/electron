@@ -971,7 +971,7 @@ app.setJumpList([
         title: 'Tool A',
         program: process.execPath,
         args: '--run-tool-a',
-        icon: process.execPath,
+        iconPath: process.execPath,
         iconIndex: 0,
         description: 'Runs Tool A'
       },
@@ -980,7 +980,7 @@ app.setJumpList([
         title: 'Tool B',
         program: process.execPath,
         args: '--run-tool-b',
-        icon: process.execPath,
+        iconPath: process.execPath,
         iconIndex: 0,
         description: 'Runs Tool B'
       }
