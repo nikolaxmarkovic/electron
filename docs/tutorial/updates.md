@@ -32,7 +32,7 @@ npm install update-electron-app
 
 Then, invoke the updater from your app's main process file:
 
-```js title="main.js"
+```js title="main.js" @ts-nocheck
 require('update-electron-app')()
 ```
 
