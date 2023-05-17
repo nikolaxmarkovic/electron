@@ -1034,7 +1034,7 @@ use this method to ensure single instance.
 An example of activating the window of primary instance when a second instance
 starts:
 
-```javascript
+```javascript @ts-type={createWindow:()=>void}
 const { app } = require('electron')
 let myWindow = null
 
@@ -1404,7 +1404,7 @@ Show the platform's native emoji picker.
 
 Returns `Function` - This function **must** be called once you have finished accessing the security scoped file. If you do not remember to stop accessing the bookmark, [kernel resources will be leaked](https://developer.apple.com/reference/foundation/nsurl/1417051-startaccessingsecurityscopedreso?language=objc) and your app will lose its ability to reach outside the sandbox completely, until your app is restarted.
 
-```js
+```js @ts-type={data:string}
 // Start accessing the file.
 const stopAccessingSecurityScopedResource = app.startAccessingSecurityScopedResource(data)
 // You can now access the file outside of the sandbox 🎉
